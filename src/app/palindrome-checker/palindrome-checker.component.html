@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card col-md-3 position-absolute top-50 start-50 translate-middle text-center text-dark p-3"
+    style="width: 18rem;">
+    <div class="card-body">
+      <div class="row">
+        <div class="card-title">
+          <h5>Palindrome Number Checker</h5>
+        </div>
+        <input [(ngModel)]="num" type="number" placeholder="Digite um número" class="form-control">
+        <button (click)="check()" class="btn btn-primary mt-3">Check
+        </button>
+        <p *ngIf="result !== null" class="alert alert-success mt-2">O número <strong>{{ num }}</strong> {{ result }}</p>
+      </div>
+    </div>
+  </div>
+</div>
